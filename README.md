@@ -1,38 +1,22 @@
-# Portafolio · Jose Rene Guarachi
+# Jose Rene Guarachi · Portafolio
 
-Landing page personal como AI Engineer y Full Stack. Next.js 16 (App Router), Tailwind CSS 4 y Motion para las animaciones.
+Este es mi portafolio personal. Soy Ingeniero de Sistemas, AI Engineer y desarrollador Full Stack en Santa Cruz, Bolivia. Llevo 4 años construyendo software y hoy me enfoco en IA generativa: agentes para WhatsApp, arquitecturas RAG y automatizaciones que ya funcionan en producción.
 
-## Cómo correrlo
+Aquí cuento quién soy, en qué he trabajado y qué proyectos he construido. Entre ellos está **Ari**, un agente de IA que atiende a estudiantes por WhatsApp y resuelve por sí solo el 82% del enrutamiento.
 
-```bash
-npm install
-npm run dev
-```
+## Qué vas a encontrar
 
-Abre http://localhost:3000.
+- **Proyectos:** agentes conversacionales, sistemas RAG y servidores MCP, con resultados reales.
+- **Experiencia:** mi recorrido, desde las prácticas hasta liderar equipos técnicos.
+- **Stack:** las tecnologías con las que trabajo a diario, de LLMs a SQL Server.
+- **Contacto:** cómo escribirme y mi CV para descargar.
 
-## Cómo editar el contenido
+## Cómo está hecho
 
-Todos los textos, proyectos, experiencia, stack y links están en `src/data/profile.ts`.
-Para agregar un proyecto, copia uno de la lista `projects` y cambia sus datos. Si un link no existe todavía, deja `href` vacío y se muestra como texto.
+Lo diseñé y desarrollé yo, con Next.js, TypeScript, Tailwind CSS y Motion. Tiene modo oscuro y claro, efectos 3D que siguen al cursor y animaciones que respetan la opción de "reducir movimiento" del sistema. También cuidé la accesibilidad: el contraste cumple WCAG AA y todo se puede recorrer con el teclado.
 
-El CV descargable está en `public/jose-guarachi-cv.pdf`; reemplázalo con el mismo nombre para actualizarlo.
+## Contacto
 
-## Design system
-
-- Colores en `src/app/globals.css` como variables CSS (`--bg`, `--accent`, etc.), expuestas a Tailwind como `bg-bg`, `text-accent-text`, `border-line`...
-- Oscuro por defecto. El botón de tema guarda la elección en `localStorage` y la aplica con `data-theme` en `<html>` antes de pintar (sin parpadeo).
-- Dos ajustes de contraste respecto al documento original, para cumplir WCAG AA en texto pequeño:
-  - `--secondary-text` (#A08CFF en oscuro) para enlaces: el violeta #7C5CFF queda en 4.4:1 sobre tinta.
-  - `--accent-text` en claro es #5A7500 en lugar de #5E7A00 (4.46:1 → 4.8:1 sobre papel).
-
-## Animaciones y accesibilidad
-
-- Titular con revelado por palabra, línea tipo terminal, contadores, barra de progreso de lectura y línea de tiempo que se dibuja con el scroll.
-- Efectos 3D: la ventana de editor del hero se inclina con el puntero y el scroll con capas a distinta profundidad; las tarjetas de proyectos y stack se inclinan hacia el cursor.
-- Con "reducir movimiento" activo en el sistema, se desactivan inclinaciones y desplazamientos y quedan solo fundidos.
-- Enlace "Saltar al contenido", landmarks, foco visible, menú móvil con `aria-expanded` y cierre con Escape.
-
-## Publicarlo
-
-Sube el repo a GitHub e impórtalo en vercel.com: queda publicado con una URL gratis.
+- Email: [josereneguarachi@gmail.com](mailto:josereneguarachi@gmail.com)
+- LinkedIn: [jose-rene-guarachi-pitiga](https://linkedin.com/in/jose-rene-guarachi-pitiga)
+- GitHub: [JRGPdev](https://github.com/JRGPdev)
